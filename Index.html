@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Your Personal Wellness & Accessibility Hub</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+
+        body {
+
+            font-family: 'Inter', sans-serif;
+
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+
+            min-height: 100vh;
+
+        }
+
+        .card {
+
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            cursor: pointer;
+
+            position: relative;
+
+            overflow: hidden;
+
+        }
+
+        .card:hover {
+
+            transform: translateY(-8px);
+
+            box-shadow: 0 15px 30px rgba(49, 130, 206, 0.3);
+
+        }
+
+        .card::before {
+
+            content: '';
+
+            position: absolute;
+
+            top: 0;
+
+            left: 0;
+
+            width: 100%;
+
+            height: 100%;
+
+            background: rgba(0, 0, 0, 0.05);
+
+            opacity: 0;
+
+            transition: opacity 0.3s ease;
+
+        }
+
+        .card:hover::before {
+
+            opacity: 1;
+
+        }
+
+        .icon-bg {
+
+            background-size: cover;
+
+            background-position: center;
+
+        }
+
+        /* Specific Card Backgrounds for visual flair */
+
+        .card-ai { background: linear-gradient(45deg, #3b82f6, #60a5fa); }
+
+        .card-mindful { background: linear-gradient(45deg, #10b981, #34d399); }
+
+        .card-bhavyesh { background: linear-gradient(45deg, #f59e0b, #fbbf24); }
+
+    </style>
+
+</head>
+
+<body class="p-4 md:p-8">
+
+
+
+    <div class="max-w-6xl mx-auto">
+
+        <!-- Header Section -->
+
+        <header class="text-center py-12 mb-10 bg-white rounded-xl shadow-lg">
+
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-800 tracking-tight">
+
+                Welcome to Your Personal Hub
+
+            </h1>
+
+            <p class="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">
+
+                Select a tool below to access advanced AI companionship, mental wellness support, or accessibility features.
+
+            </p>
+
+        </header>
+
+
+
+        <!-- Application Cards Grid -->
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+
+
+            <!-- Card 1: AI Companion -->
+
+            <a href="./ai.html" class="block">
+
+                <div class="card card-ai p-8 rounded-2xl shadow-xl text-white">
+
+                    <div class="flex items-center space-x-4">
+
+                        <i class="fas fa-robot text-5xl p-4 bg-white/20 rounded-xl"></i>
+
+                        <h2 class="text-3xl font-bold">AI Companion</h2>
+
+                    </div>
+
+                    <p class="mt-6 text-xl font-semibold">
+
+                        A Friend When You Need One
+
+                    </p>
+
+                    <p class="mt-2 text-gray-200">
+
+                        Connect with an AI for conversation, support, and to combat loneliness. Always available, always listening.
+
+                    </p>
+
+                    <div class="mt-6">
+
+                        <span class="inline-block px-4 py-2 text-sm font-medium bg-white text-blue-600 rounded-full shadow-md">
+
+                            Start Chat
+
+                            <i class="fas fa-arrow-right ml-2 text-blue-600"></i>
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- Card 2: Mindful Journey -->
+
+            <a href="./Mindful Journey.html" class="block">
+
+                <div class="card card-mindful p-8 rounded-2xl shadow-xl text-white">
+
+                    <div class="flex items-center space-x-4">
+
+                        <i class="fas fa-leaf text-5xl p-4 bg-white/20 rounded-xl"></i>
+
+                        <h2 class="text-3xl font-bold">Mindful Journey</h2>
+
+                    </div>
+
+                    <p class="mt-6 text-xl font-semibold">
+
+                        Path to Peace & Calm
+
+                    </p>
+
+                    <p class="mt-2 text-gray-200">
+
+                        Specialized tools and guided activities to help manage anxiety and depression, focusing on mental wellness.
+
+                    </p>
+
+                    <div class="mt-6">
+
+                        <span class="inline-block px-4 py-2 text-sm font-medium bg-white text-green-600 rounded-full shadow-md">
+
+                            Begin Wellness
+
+                            <i class="fas fa-arrow-right ml-2 text-green-600"></i>
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- Card 3: BHAVYESH DONE (Accessibility) -->
+
+            <a href="./BHAVYESH - DONE.html" class="block">
+
+                <div class="card card-bhavyesh p-8 rounded-2xl shadow-xl text-white">
+
+                    <div class="flex items-center space-x-4">
+
+                        <i class="fas fa-universal-access text-5xl p-4 bg-white/20 rounded-xl"></i>
+
+                        <h2 class="text-3xl font-bold">Toolkit</h2> <!-- Changed Title Here -->
+
+                    </div>
+
+                    <p class="mt-6 text-xl font-semibold">
+
+                        Ultimate Accessibility Toolkit
+
+                    </p>
+
+                    <p class="mt-2 text-gray-200">
+
+                        Features: OCR (Text Reader), STT (Speech to Text), Object Describer, Emergency Alert, and Task Helper.
+
+                    </p>
+
+                    <div class="mt-6">
+
+                        <span class="inline-block px-4 py-2 text-sm font-medium bg-white text-yellow-600 rounded-full shadow-md">
+
+                            Explore Tools
+
+                            <i class="fas fa-arrow-right ml-2 text-yellow-600"></i>
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+        </div>
+
+        
+
+        <!-- Footer / Contact Info (Optional but good practice) -->
+
+        <footer class="text-center mt-20 text-gray-600 text-sm">
+
+            <p>Built for enhanced accessibility and personal well-being.</p>
+
+        </footer>
+
+    </div>
+
+
+
+</body>
+
+</html>
